@@ -1,0 +1,491 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.hidden{
+  display: none!important;
+  visibility: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+/* Form SignIn and regist
+ ========================= */
+.form-signin,
+.form-regist {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 320px;
+  max-height: max-content;
+  margin: auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgb(0 0 0 / 50%);
+  block-size: max-content;
+}
+
+.form-regist {
+  max-width: 420px;
+}
+
+.form-signin .title,
+.form-regist .title {
+  margin: 0 auto 10px;
+  padding: 10px;
+  border-left: 10px solid #2196f3;
+  background-color: rgb(33 150 243 / 20%);
+  font-size: 23px;
+}
+
+.form-grup {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-signin .form-label,
+.form-regist .form-label {
+  flex: 30%;
+  font-size: 16px;
+}
+
+.form-signin .form-input,
+.form-regist .form-input {
+  flex: 70%;
+  padding: 6px 5px;
+}
+
+.form-signin .form-config,
+.form-regist .form-config {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.form-signin .form-btn,
+.form-regist .form-btn {
+  display: block;
+  padding: 10px 15px;
+  width: 100%;
+  margin: 10px auto;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2196f3;
+  border: none;
+}
+
+.form-new {
+  font-family: monospace;
+}
+
+.form-signin .form-config .form-txt,
+.form-regist .form-config .form-txt {
+  font-style: italic;
+  margin: 0 5px;
+}
+
+.form-mssg {
+  position: absolute;
+  font-size: 12px;
+  font-family: monospace;
+  bottom: -15px;
+  left: 30%;
+  color: darkgray;
+  font-style: italic;
+}
+
+/* Informasi
+ ============ */
+.info {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #ffdead;
+  border: 1px solid #a69171;
+}
+
+.user-text {
+  font-style: italic;
+  font-family: monospace;
+  user-select: all;
+}
+
+/* Wrapper
+ ========= */
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 630px;
+  max-height: max-content;
+  block-size: max-content;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 2px 1px rgb(0 0 0 / 50%);
+  border-radius: 5px;
+}
+
+.container .user-info {
+  position: absolute;
+  top: -10px;
+  background-color: #03a9f4;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 0px rgb(0 0 0 / 50%);
+}
+
+.info {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #ffdead;
+  border: 1px solid #a69171;
+}
+
+.btn-logout {}
+
+.container .btn-out {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  background-color: #c10015;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.container .main {
+  display: block;
+  margin: 15px auto;
+}
+
+/* Form SKripsi
+ ============== */
+.form-skripsi {
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+  background-color: #ebebeb;
+  transition: 0.25s all ease-in-out;
+}
+
+.form-skripsi .btn-back {
+  position: absolute;
+  top: -10px;
+  padding: 5px 11px;
+  border: none;
+  background-color: #c10015;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 0px rgb(0 0 0 / 50%);
+  cursor: pointer;
+}
+
+.form-skripsi .form-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+}
+
+.form-skripsi .form-input {
+  display: flex;
+  margin: 2px 0;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.form-skripsi .form-input:nth-child(even) {
+  background-color: #d7d7d7;
+}
+
+.form-skripsi .form-input label {
+  flex: 30%;
+}
+.form-skripsi .form-input textarea{
+  max-width: 100%;
+  min-height: 40px;
+}
+
+.form-skripsi .form-input input,
+.form-skripsi .form-input textarea,
+.form-skripsi .form-input .form-select {
+  flex: 70%;
+  padding: 5px;
+}
+
+.form-skripsi .form-btn {
+  display: flex;
+  margin: 10px 0 0;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-skripsi .form-btn input {
+  flex: 30%;
+  padding: 10px 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.form-skripsi .form-btn input:nth-child(2) {
+  margin: auto 5px;
+  background-color: #222;
+}
+
+.form-skripsi .form-btn input:first-child {
+  background-color: #666;
+}
+
+.form-skripsi .form-btn input:last-child {
+  background-color: #2196f3;
+}
+
+/* btn sign in google
+ ==================== */
+.btn-sign-google {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-sign-google .image-icon {
+  position: absolute;
+  top: 15%;
+  left: 10px;
+  bottom: 0;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.form-signin .signGoogle {
+  background-color: transparent;
+  color: #2196f3;
+  border: 1px solid #2196f3;
+  margin-top: 0;
+}
+
+.btn-sign-google img {
+  max-height: 23px;
+  max-width: 23px;
+  background-color: transparent;
+}
+
+
+/* fade transisi 
+ =============== */
+.fadeIn {
+  animation: 1s fadeIn forwards;
+}
+
+.fadeOut {
+  animation: 1s fadeOut forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    height: 0;
+    transform: translate(0, -20px);
+    transition: height 0.9s;
+  }
+
+  to {
+    opacity: 1;
+    height: max-content;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    height: max-content;
+    transition: height 0.9s;
+  }
+
+  to {
+    transform: translate(0, -20px);
+    opacity: 0;
+    height: 0;
+  }
+}
+
+/* 404NOTFOUND
+ ============== */
+.not-found {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 50%;
+  height: max-content;
+  margin: auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 1px rgb(0 0 0 / 50%);
+}
+
+.not-found .title {
+  margin: 10px auto;
+  text-align: center;
+  color: #2196f3;
+  font-size: 5em;
+}
+
+.not-found .desc {
+  text-align: center;
+  margin: 15px auto;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+.not-found button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Css Browser support */
+.notSupportBrowsers {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 40%;
+  margin: auto;
+  text-align: center;
+  max-width: 50%;
+}
+
+.notSupportBrowsers h1 {
+  font-size: 25px;
+  line-height: normal;
+  margin: 0;
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 3px 0px rgb(0 0 0 / 60%);
+  border-radius: 10px;
+}
+
+.notSupportBrowsers h1 .fox {
+  background-color: #d04176;
+  background-image: linear-gradient(43deg,
+      #d04176 0%,
+      #cc49c5 30%,
+      #ffbf00 66%,
+      #ffda00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 0px rgb(0 0 0 / 20%);
+}
+
+.notSupportBrowsers h1 .chm {
+  background: #de5044;
+  background: linear-gradient(to left,
+      #de5044 0%,
+      #fecd42 30%,
+      #4b89f6 60%,
+      #18a05e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 0px rgb(0 0 0 / 20%);
+}
+
+.notSupportBrowsers h1 .edge {
+  background: #0069e6;
+  background: linear-gradient(90deg, #0069e6 0%, #1b5498 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 0px rgb(0 0 0 / 20%);
+}
+
+/* Mobile CSS */
+@media screen and (max-width: 720px) {
+  .bg_ {
+    width: 100%;
+  }
+
+  .background {
+    max-width: inherit;
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .form-signin,
+  .form-regist,
+  .modal-content,
+  .container {
+    max-width: 98%;
+  }
+
+  .bg_:after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg,
+        rgba(108, 166, 213, 0.6) 50%,
+        rgb(108 165 213 / 8%) 100%);
+  }
+}
